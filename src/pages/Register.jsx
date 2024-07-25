@@ -12,7 +12,7 @@ const Register = () => {
   const handleRegister = async () => {
     try {
       await axios.post(
-        "https://api-cartas-brl9m4ud4-klebermaycs-projects.vercel.app/signup",
+        "https://api-cartas-qqayh45x1-klebermaycs-projects.vercel.app/signup",
         {
           email,
           password,

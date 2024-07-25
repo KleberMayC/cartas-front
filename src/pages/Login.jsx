@@ -9,7 +9,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post("https://api-cartas-brl9m4ud4-klebermaycs-projects.vercel.app/sigin", {
+      const response = await axios.post("https://api-cartas-qqayh45x1-klebermaycs-projects.vercel.app/sigin", {
         email,
         password,
       });
