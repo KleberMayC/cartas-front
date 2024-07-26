@@ -11,15 +11,12 @@ const Register = () => {
 
   const handleRegister = async () => {
     try {
-      await axios.post(
-        "https://api-cartas-qqayh45x1-klebermaycs-projects.vercel.app/signup",
-        {
-          email,
-          password,
-          username,
-          name,
-        }
-      );
+      await axios.post("https://cartas-app.onrender.com/signup", {
+        email,
+        password,
+        username,
+        name,
+      });
       navigate("/login");
       console.log("Registrando usuário:", { email, password, username });
       navigate("/login");

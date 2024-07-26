@@ -9,10 +9,13 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post("https://api-cartas-qqayh45x1-klebermaycs-projects.vercel.app/sigin", {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://cartas-app.onrender.com/sigin",
+        {
+          email,
+          password,
+        }
+      );
       // Armazenar o token de autenticação no localStorage ou em um cookie
       localStorage.setItem("authToken", response.data.token);
       // Após a autenticação bem-sucedida, redirecione o usuário para o dashboard
